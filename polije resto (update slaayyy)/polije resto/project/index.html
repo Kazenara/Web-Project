@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- librari font awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="container-flex">
+                <div class="brand">
+                    <a href="">Polije restoran</a>
+                </div>
+                <div class="burger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="bg-sidebar"></div>
+                <ul class="sidebar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menuMenu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#kontak">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- akhir dari navbar -->
+    <!-- home page -->
+<section id="home">
+    
+
+    <div class="p-5 text-center bg-image" style="
+      background-image: url('image/resto.jpg');
+      height: 400px;
+      margin-top: 58px;
+    ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+
+                    <br>
+                    <br>
+                    <img src="https://logoeazy.com/wp-content/uploads/2021/02/logo-polije.png" width="30%" height="30%">
+                    <div id="text">
+
+                        <br>
+                        <script>
+                            var i = 0,
+                                text;
+                            text = " Welcome To Polije Restaurant, Grab Your food Now!......"
+
+                            function ketik() {
+                                if (i < text.length) {
+                                    document.getElementById("text").innerHTML += text.charAt(i);
+                                    i++;
+                                    setTimeout(ketik, 80);
+                                }
+                            }
+                            ketik();
+                        </script>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+        <path fill="#e2edff" fill-opacity="5"
+            d="M0,224L40,213.3C80,203,160,181,240,149.3C320,117,400,75,480,96C560,117,640,203,720,218.7C800,235,880,181,960,181.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+</section>
+    <!--akhir dari home page-->
+    <!-- menu -->
+    <section id="menuMenu">
+        <div class="container text-center" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row text-center mb-3">
+                <div class="col">
+                </div>
+            </div>
+            <h2>FOOD</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/ayam kaloko.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">KOLOKE CHICKEN</p>
+                            <p>Koloke chicken dengan bumbu asam manis </p>
+                            <p>Rp 25.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/gochujang.jpeg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">CRISPY FRIED CHICKEN</p>
+                            <p>Chicken wings crispy with gochujang sauce </p>
+                            <p>Rp 30.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 ">
+                    <div class="card" data-tilt>
+                        <img src="image/toast.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">TOAST</p>
+                            <p>Berry roasted toast with maple syrup </p>
+                            <p>Rp 20.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/carbonara.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">CARBONARA PASTA</p>
+                            <p>Pasta spaghetti with bechamel sauce</p>
+                            <p>Rp 25.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 ">
+                    <div class="card" data-tilt>
+                        <img src="image/steak.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">STEAK</p>
+                            <p>Beef steak (choose your level of doneness) </p>
+                            <p>Rp 50.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 ">
+                    <div class="card" data-tilt>
+                        <img src="image/lobster.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">LOBSTER</p>
+                            <p>Grilled lobster mushroom sauce (mozarella optional)</p>
+                            <p>Rp 90.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>DRINK</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/matcha.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">MATCHA</p>
+                            <p>Matcha served with bobba</p>
+                            <p>Rp 13.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/red velvet.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">RED VELVET</p>
+                            <p>Red velvet bobba yummy tummy</p>
+                            <p>Rp 15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/tai tea.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">THAI TEA</p>
+                            <p>Original thai tea from Thailand</p>
+                            <p>Rp 15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/mango milk tea.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">MANGO TEA</p>
+                            <p>Mango bobba tea with slice of original mango</p>
+                            <p>Rp 15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/choco.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">CHOCOLATE ICE</p>
+                            <p>Chocolate ice with milk tea served with bobba</p>
+                        </div>
+                        <p>Rp 15.000</p>
+                        </p<>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" data-tilt>
+                        <img src="image/taro.jpg" class="card-img-top" alt="makanan">
+                        <div class="card-body">
+                            <p class="card-text text-center">TARO ICE</p>
+                            <p>Taro wafer milk tea ice with your favourite topping 'bobba' </p>
+                            <p>Rp 15.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+            <path fill="#e2edff" fill-opacity="1"
+                d="M0,224L40,213.3C80,203,160,181,240,149.3C320,117,400,75,480,96C560,117,640,203,720,218.7C800,235,880,181,960,181.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- akhir menu -->
+    <!-- about -->
+    <section id="about">
+
+        <div class="container" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>About Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center fs-5 text-center">
+                <div class="col-md-4">
+                    <p> Polije Restaurant which was founded in 2018 by this Polytechnic Negeri Jember has a variety of menu's, ranging from Asian to western culinery.
+                        Polije Restaurant in addition to providing food, it also provides a variety of bobba drinks. The best selling food at this restaurant is beef steak, while the drink is matcha bobba.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Polije Restaurant prioritizes food and beverages that are processed and served hygienically, without using ingredients that are harmful to health.
+                        In addition, using environmentally friendly equipment, and buyers being responsible by disposing of their own trash after eating or drinking.
+                        So grab yours now!!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+            <path fill="#e2edff" fill-opacity="1"
+                d="M0,224L40,213.3C80,203,160,181,240,149.3C320,117,400,75,480,96C560,117,640,203,720,218.7C800,235,880,181,960,181.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+<section id="kontak">
+    
+
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACT</span>
+                            <span>US</span>
+                        </div>
+                        <div class="app-contact">CONTACT INFO : +62081230147253</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="CONTACT NO">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="MESSAGE">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+                inspired by
+                <a class="credits-link" href="https://jti.polije.ac.id/" target="_blank">
+                    <svg class="dribbble" viewBox="0 0 200 200">
+                        <g stroke="#ffffff" fill="none">
+                            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                            <path
+                                d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345"
+                                stroke-width="20"></path>
+                            <path
+                                d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951"
+                                stroke-width="20"></path>
+                            <path
+                                d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103"
+                                stroke-width="20"></path>
+                        </g>
+                    </svg>
+                    MIF INTERNATIONAL
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
